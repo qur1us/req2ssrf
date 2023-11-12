@@ -128,7 +128,7 @@ if __name__ == '__main__':
     parser = argparse.ArgumentParser(description="HTTP requests to CSRF PoC converter")
 
     parser.add_argument('-r', '--request', help='HTTP request file path')
-    parser.add_argument('-c', '--chain', action='store_true', help='Chain SSSRF and XSS')
+    parser.add_argument('-c', '--chain', action='store_true', help='Chain SSRF and XSS')
     parser.add_argument('-p', '--placeholder', help='GET/POST parameter to place the XSS payload to')
     parser.add_argument('-x', '--payload', help='XSS payload to use')
     parser.add_argument('-a', '--autosubmit', action='store_true', help='CSRF payload will be executed automatically, no interaction required (default: button)')

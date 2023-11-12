@@ -31,7 +31,7 @@ optional arguments:
   -h, --help            show this help message and exit
   -r REQUEST, --request REQUEST
                         HTTP request file path
-  -c, --chain           Chain SSSRF and XSS
+  -c, --chain           Chain SSRF and XSS
   -p PLACEHOLDER, --placeholder PLACEHOLDER
                         GET/POST parameter to place the XSS payload to
   -x PAYLOAD, --payload PAYLOAD
@@ -120,9 +120,9 @@ $ python3 .\req2csrf.py -r request.txt -a --chain -p 'username' -x '<script>aler
 </head>
 <body>
     <h1>CSRF demonstration</h1>
-    <form action="https://qurius-security.com/req2ssrf.php" method="POST">
+    <form action="https://qurius-security.com/req2csrf.php" method="POST">
         <input type="hidden" id="username" name="username" value="&lt;script&gt;alert(1)&lt;/script&gt;">
-        <input type="hidden" id="password" name="password" value="req2ssrf">
+                <input type="hidden" id="password" name="password" value="req2csrf">
 
         <input type="submit" value="Submit">
     </form>
