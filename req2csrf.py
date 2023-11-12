@@ -135,7 +135,7 @@ def save(html, outfile) -> None:
         file.write(html)
 
 
-if __name__ == '__main__':
+def main():
     print_banner()
 
     parser = argparse.ArgumentParser(description="HTTP requests to CSRF PoC converter")
@@ -180,4 +180,8 @@ if __name__ == '__main__':
     else:
         print("\n[*] Output:")
         print(html)
+
+
+if __name__ == '__main__':
+   main()
 
