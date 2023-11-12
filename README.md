@@ -1,4 +1,4 @@
-# req2ssrf
+# req2csrf
 
 This is a simple tool that automates the exploitation of cross-site request forgery (CSRF) and reflected cross-site scripting (XSS) vulnerabilities.
 
