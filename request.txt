@@ -1,0 +1,6 @@
+POST /req2ssrf.php HTTP/1.1
+Host: qurius-security.com
+Content-Type: application/x-www-form-urlencoded
+Content-Length: 35
+
+username=req2ssrf&password=req2ssrf
